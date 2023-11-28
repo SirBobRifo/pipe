@@ -15,7 +15,7 @@ jobs:
                 list-files: shell
                 filters: |
                   text:
-                    - 'text/*'
+                    - 'texta/*'
    build-deploy-Prod:
         if: ${{ needs.changes.outputs.dirs != '[]' }}
         runs-on: ubuntu-latest

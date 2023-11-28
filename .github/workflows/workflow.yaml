@@ -14,26 +14,8 @@ jobs:
               with:
                 list-files: shell
                 filters: |
-                  currency-rates-population-lambda:
-                    - 'currency-rates-population-lambda/**/*'
-                  events-publisher:
-                    - 'events-publisher/**/*'
-                  mailer:
-                    - 'mailer/**/*'
-                  max-mind-importer:
-                    - 'max-mind-importer/**/*'
-                  orders-reslover:
-                    - 'orders-reslover/**/*'
-                  publisher-award-mock:
-                    - 'publisher-award-mock/**/*'
-                  publisher-login-mock:
-                    - 'publisher-login-mock/**/*'
-                  publisher-player-info-sync-mock:
-                    - 'publisher-player-info-sync-mock/**/*'
-                  stripe-webhooks:
-                    - 'stripe-webhooks/**/*'
-                  support-mailer:
-                    - 'support-mailer/**/*'
+                  text:
+                    - 'text/**/*'
    build-deploy-Prod:
         if: ${{ needs.changes.outputs.dirs != '[]' }}
         runs-on: ubuntu-latest

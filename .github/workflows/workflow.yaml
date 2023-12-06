@@ -4,6 +4,8 @@ on:
 jobs:
     release:
         runs-on: ubuntu-latest
+        permissions:
+           contents: write
         name: create a release
         steps:
          - uses: actions/checkout@v3
